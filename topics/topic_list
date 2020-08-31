@@ -1,0 +1,186 @@
+
+IS vs == 
+--------------
+The is operator compares the identity of two objects while the == operator compares
+the values of two objects. 
+Out[8]: True
+a is b
+Out[9]: False
+id(a)
+Out[10]: 2081762462736
+id(b)
+Out[11]: 2081762463152
+c = 5
+d = 5
+id(a)
+Out[14]: 2081762462736
+id(c)
+Out[15]: 140733185102784
+id(d)
+Out[16]: 140733185102784
+
+id
+-----
+That's the identity of the location of the object in memory... and it similirity like "is" operator
+type()
+------
+shows the type of object
+
+python objects
+----------------------
+everything in python is an object
+>>> type(stri)
+<class 'str'>
+>>> a=1
+>>> type(a)
+<class 'int'>
+
+Two types of objects:
+Mituable
+list, dict, set, byte array
+
+Imituable
+string
+>>> stri="abc"
+>>> stri[0]
+'a'
+>>> stri[0]="c"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> stri="cuttack"
+>>> id(stri[0])
+2604556585200
+>>> id(stri[1])
+2604556583800
+>>> id(stri[5])
+2604556585200
+>>>
+
+string, tuple, frozen set [note: immutable version of set], bytes
+
+
+List:
+
+thislist = ["apple", "banana", "cherry"]
+thislist
+Out[26]: ['apple', 'banana', 'cherry']
+thislist[0]
+Out[27]: 'apple'
+thislist[1]
+Out[28]: 'banana'
+
+print(thislist[-1])
+cherry
+change the value in list
+thislist[1] = "blackcurrant"
+print(thislist)
+['apple', 'blackcurrant', 'cherry']
+
+Check if Item Exists in list
+'cherry' in thislist
+Out[31]: True
+'orange' in thislist
+Out[32]: False
+
+for i in thislist:
+    if i =='apple':
+        print("apple")
+		
+print(len(thislist))
+3
+------------------we can use slice [:] in objects which can use have len()
+                   ----------abbbssssssssssss [:]
+				   ----------"1234.344455" [:4]
+
+
+
+Add Items
+
+To add an item to the end of the list, use the append() method:
+Out[43]: ['apple', 'blackcurrant', 'cherry']
+thislist.append("orange")
+thislist
+Out[45]: ['apple', 'blackcurrant', 'cherry', 'orange']
+
+insert an elemet in any postion
+thislist.insert(1, "orange")
+thislist[1]="blackcurrant" ---------------------------use for assiging a list member(update)
+Out[71]: ['apple', 'cherry', 'banana', 'orange']
+li.insert(3, 'orange')
+li
+Out[73]: ['apple', 'cherry', 'banana', 'orange', 'orange']
+li.insert(3, 'pinapple')
+li
+Out[75]: ['apple', 'cherry', 'banana', 'pinapple', 'orange', 'orange']
+li[4]="coconut" ---------------------------use for assiging a list member(update)
+li
+Out[77]: ['apple', 'cherry', 'banana', 'pinapple', 'coconut', 'orange']
+
+
+Remove an elemet(with value/name)
+thislist.remove("orange")
+thislist
+['apple', 'abbc', 'cherry']
+Delete an elemnt and also the complete list (index)
+-------------------------------------------
+del thislist[0]
+del thislist
+----------clear
+clear the list --empty the list values but list will exist
+li.clear()
+li
+[]
+
+----------------------------------------------------------reverse list without using revese method
+li[::-1]
+Out[91]: ['banana', 'cherry', 'blackcurrant', 'apple']
+
+append()	Adds an element at the end of the list
+clear()	Removes all the elements from the list
+copy()	Returns a copy of the list
+count()	Returns the number of elements with the specified value
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+index()	Returns the index of the first element with the specified value
+insert()	Adds an element at the specified position
+pop()	Removes the element at the specified position
+remove()	Removes the item with the specified value
+reverse()	Reverses the order of the list
+sort()	Sorts the list
+
+pop--remove an elemet by specifyin position, without specifying position it will delete the last elemnt.
+li
+['apple', 'blackcurrant', 'cherry']
+li.pop()
+'cherry'
+li.pop(1)
+-----------
+
+extend
+--------------------
+Use the extend() method to add list2 at the end of list1:
+a="abc"
+list1 = ["a", "b" , "c"]
+list2 = ["a", "b" , "c"]
+list1.extend(list2)
+list1
+Out[6]: ['a', 'b', 'c', 'a', 'b', 'c']
+list1.clear()
+list1
+Out[8]: []
+list1 = ["a", "b" , "c"]
+li3=list1+list2
+li3
+Out[11]: ['a', 'b', 'c', 'a', 'b', 'c']
+
+
+
+
+
+
+
+
+
+
+
+

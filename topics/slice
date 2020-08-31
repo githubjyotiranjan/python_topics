@@ -1,0 +1,16 @@
+Python slice()
+The slice() function returns a slice object that can use used to slice strings, lists, tuple etc.
+
+The slice object is used to slice a given sequence (string, bytes, tuple, list or range) or any object which supports sequence protocol (implements __getitem__() and __len__() method).
+
+The syntax of slice() is:
+
+slice(start, stop, step)
+
+Using Indexing Syntax for Slicing
+
+The slice object can be substituted with the indexing syntax in Python.
+
+You can alternately use the following syntax for slicing:
+
+obj[start:stop:step]

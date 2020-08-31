@@ -1,0 +1,85 @@
+everything in python is an object
+first class object is function
+
+It is an instance of an Object type
+Functions can be stored as variable
+Pass First Class Function as argument of some other functions
+Return Functions from other function
+Store Functions in lists, sets or some other data structures.
+
+
+Python has *args which allow us to pass the variable number of non keyword arguments to function.
+Python passes variable length non keyword argument to function using *args but we cannot use this to pass keyword argument.
+
+def getthelidictvalue(*args, **krgs):
+    print(args)
+    print("+++++++++++++")
+    print(krgs)
+    return "true"
+
+
+print(getthelidictvalue(9,10, irst="Geeks", mid="for", last="Geeks"))
+
+#generator
+It is as easy as defining a normal function, but with a yield statement instead of a return statement.
+def my_gen():
+    n = 1
+    print('This is printed first')
+    # Generator function contains yield statements
+    yield n
+
+    n += 1
+    print('This is printed second')
+    yield n
+
+    n += 1
+    print('This is printed at last')
+    yield n
+
+a = my_gen()
+next(a)
+next(a)
+next(a)
+next(a)
+
+#decocorator
+Python has an interesting feature called decorators to add functionality to an existing code.
+This is also called metaprogramming because a part of the program tries to modify another part of the program at compile time.
+
+#before calling a function and after calling a function
+
+from functools import wraps
+import requests
+
+session = requests.session()
+session.username = "abc"
+def login_required(f):
+    if 'abc' in session.username:
+        return f
+    else:
+        print("login to access this function")
+
+    # @wraps(f)
+    # def wrap(*args, **kwargs):
+    #     print("hi")
+    #     if 'abc' in session.username:
+    #         print("aaaa")
+    #         return f(*args, **kwargs)
+    #     else:
+    #         return "need to login to acess this module"
+
+@login_required
+def userName():
+    first_name = "Ananta"
+    last_name = "Singh"
+    location = "orissa"
+    pin = "70088"
+    "i am Ananta sing i  leive in orissa 70088"
+    print(f"i am {first_name} {last_name} i  leive in {location} {pin}")
+    a = "i am {} {} i leave in {} {}".format(first_name, last_name, location, pin)
+    return a
+
+print(userName())
+
+#lambda
+multiple 

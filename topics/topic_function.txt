@@ -11,6 +11,8 @@ Store Functions in lists, sets or some other data structures.
 Python has *args which allow us to pass the variable number of non keyword arguments to function.
 Python passes variable length non keyword argument to function using *args but we cannot use this to pass keyword argument.
 
+We use two operators * (for tuples) and ** (for dictionaries). this is called ----Packing and ----Unpacking Arguments in Python
+
 def getthelidictvalue(*args, **krgs):
     print(args)
     print("+++++++++++++")

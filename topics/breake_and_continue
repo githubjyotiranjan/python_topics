@@ -1,0 +1,29 @@
+Break stops the execution of script if condition satisfy
+
+# Use of break statement inside the loop
+
+for val in "string":
+    if val == "i":
+        break
+    print(val)
+
+print("The end")
+s
+t
+r
+The end
+
+
+The continue statement is used to skip the rest of the code inside a loop for the current iteration only. Loop does not terminate but continues on with the next iteration.
+
+for val in "string":
+    if val == "i":
+        continue
+    print(val)
+print("The end")
+s
+t
+r
+n
+g
+The end

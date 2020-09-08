@@ -7,6 +7,10 @@ class Dog:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+    @staticmethod
+    def stmt(a):
+        print(a)
+        return True
     # def getvalue(self):
     #     return f"{self.name} is {self.age} years old"
 
@@ -17,11 +21,16 @@ class Dog:
         return f"{self.name} is {self.age} years old repr"
 
     def speak(self, sound="Arf"):
-        return f"{self.name} says parent  {sound}"
+        return f"{self.name} says parents  {sound}"
 
 a = Dog("jse", 5)
 print(a)
 print(repr(a))
+print("----")
+print(Dog.stmt(5)) #called by class name
+print(a.speak("wow")) #called by object only
+print("-----")
+
 
 # >>jse is 5 years old
 # >>jse is 5 years old repr

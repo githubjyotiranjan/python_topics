@@ -1,0 +1,2 @@
+dictinary = {'name':'abc', 'age':30, 'location':'India', 'state':'Orissa'}
+print(dict)

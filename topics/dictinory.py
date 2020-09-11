@@ -5,8 +5,10 @@ print(dictinary)
 print(dictinary.keys())
 # print(dictinary.has_key('location'))//works below python 3
 print('location' in dictinary) #for key
+print('location' in dictinary.keys())
+
 print(dictinary.__contains__('location'))
-print('India' in dictinary) #not for value
+# print('India' in dictinary) #not for value
 
 print(dictinary.values())
 print(type(dictinary.values()))

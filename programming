@@ -1,3 +1,4 @@
+https://www.csestack.org/python-tricky-interview-questions-answers/
 #find the duplicate from a list
 li=[1,2,3,4,4,5,5,1,6]
 dup_el_list=[]

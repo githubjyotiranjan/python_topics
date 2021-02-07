@@ -22,7 +22,7 @@ my_pets = ['alfred', 'tabitha', 'william', 'arla']
 uppered_pets = list(map(str.upper, my_pets))
 print(uppered_pets)
 
-#filter  skips sequence based on condition  through each objects it takes function as first argument
+#filter  skips sequence based on condition  through each objects it takes function as first argument ---- its return type is an iterator
 scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
 def is_A_student(score):
     return score > 75

@@ -1,6 +1,6 @@
 #list comphrenshion
 # List comprehension is an elegant way to define and create lists based on existinglists.
-
+#https://realpython.com/lessons/filtering-list-comprehensions/
 
 li = [1,2,3,4,5,6]
 #[2,4,6,8,10,12]
@@ -22,7 +22,7 @@ my_pets = ['alfred', 'tabitha', 'william', 'arla']
 uppered_pets = list(map(str.upper, my_pets))
 print(uppered_pets)
 
-#filter  skips sequence based on condition  through each objects
+#filter  skips sequence based on condition  through each objects it takes function as first argument
 scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
 def is_A_student(score):
     return score > 75

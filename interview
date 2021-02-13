@@ -20,7 +20,7 @@ select only one record from python
 define foregin key
 define uniq key with multiple fields
 different filter and get in django
-lazy-loading 
+lazy-loading, Eager Loading
 
 
 API

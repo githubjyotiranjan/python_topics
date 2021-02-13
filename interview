@@ -15,8 +15,9 @@ Django
 -----------
 crete a model
 retrieve data from models
-select related(works on ine to one relationship) and prefetch related(works on many to may relation ship)
-  employee department--one to one                                 books and stores--many to many
+select related(works only on to one to one relationship) and prefetch related(works on many to may relation ship as well as one to one relation ship)
+  employee department--one to one                                 books and stores--many to many (does the joing in python)
+  do the sql join
 
 select only one record from python
 define foregin key

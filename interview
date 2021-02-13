@@ -19,7 +19,8 @@ select related and prefetch related
 select only one record from python
 define foregin key
 define uniq key with multiple fields
-different filter and get in djang0
+different filter and get in django
+lazy-loading 
 
 
 API

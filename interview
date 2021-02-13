@@ -21,6 +21,7 @@ define foregin key
 define uniq key with multiple fields
 different filter and get in django
 lazy-loading, Eager Loading
+jango debugg tool bar
 
 
 API

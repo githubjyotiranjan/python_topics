@@ -28,5 +28,5 @@ How to make secure your api
 how you maintain scalblity in your application
 unit test
 code integration ci/cd
-load balancing, maintaing increasing no of users. increase traffic and usage
+load balancing, maintaing increasing no of users. increase traffic and usage(https://12factor.net/)
 

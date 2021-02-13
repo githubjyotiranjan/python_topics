@@ -19,5 +19,13 @@ select related and prefetch related
 select only one record from python
 define foregin key
 define uniq key with multiple fields
-different filter and get in djanga
+different filter and get in djang0
+
+
+API
+--------------
+How to make secure your api
+how you maintain scalblity in your application
+unit test
+code integration ci/cd
 

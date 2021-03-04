@@ -8,6 +8,7 @@ print(abc(5))//it will return first yielsd object
 --else and finally at the same function
 --what is all and any
 --filters in python
+--what is pickling and unpickling
 
 
 

@@ -25,3 +25,6 @@ for i in range(len(li)):
 
 print(li) #wwq@abc
 
+#6 th position prime no is 13 fine the 10001th prime no
+
+

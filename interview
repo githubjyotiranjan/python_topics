@@ -9,6 +9,7 @@ print(abc(5))//it will return first yielsd object
 --what is all and any
 --filters in python
 --what is pickling and unpickling
+  Pickling allows you to serialize and de-serializing Python object structures. In short, Pickling is a way to convert a python object into a character stream so that this character stream contains all the information necessary to reconstruct the object in another python script.
 
 
 

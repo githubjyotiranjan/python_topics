@@ -40,6 +40,11 @@ lis=[
  print(list("abc")==[abc])
  Q3.What is decorater. write a decorator to make name upper case
  Q3.Wow django cache works. which middle-ware is used for django cache.
+    MIDDLEWARE = [
+    'django.middleware.cache.UpdateCacheMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
+    ]
      
      
 

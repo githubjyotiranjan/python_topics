@@ -27,4 +27,20 @@ print(li) #wwq@abc
 
 #6 th position prime no is 13 fine the 10001th prime no
 
+#epicore interview 14-july-2021
+Q1.Make sort the dictonary based on relese date
+lis=[
+     {"move_name":a, "relese_year"=1987}
+     {"move_name":a, "relese_year"=2000}
+     {"move_name":a, "relese_year"=2001}
+     {"move_name":a, "relese_year"=1999}
+     {"move_name":a, "relese_year"=1920}
+    ]
+ Q2.What will be the out put of following code
+ print(list("abc")==[abc])
+ Q3.What is decorater. write a decorator to make name upper case
+ Q3.Wow django cache works. which middle-ware is used for django cache.
+     
+     
+
 
